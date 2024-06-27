@@ -43,7 +43,6 @@ public class DeleteLaboratoriumSteps {
         catch (Exception e){
             Hooks.deleteLaboratoriumTest.fail("Failed to sign in and get into laboratory details page");
         }
-
     }
 
     @And("User clicks on the Delete button")
@@ -51,10 +50,10 @@ public class DeleteLaboratoriumSteps {
         try{
             laboratoriumDetailsPage = new LaboratoriumDetailsPage(driver);
             laboratoriumDetailsPage.deleteSubmit();
-            Hooks.deleteLaboratoriumTest.pass("Successfully click edit button");
+            Hooks.deleteLaboratoriumTest.pass("Successfully click delete button");
         }
         catch (Exception e){
-            Hooks.deleteLaboratoriumTest.fail("Failed click edit button");
+            Hooks.deleteLaboratoriumTest.fail("Failed click delete button");
         }
     }
 

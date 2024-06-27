@@ -20,7 +20,6 @@ public class AddFormLaboratoriumPage {
     public void fillField(String name, String desc, String type) {
         driver.findElement(nameInput).sendKeys(name);
         driver.findElement(descInput).sendKeys(desc);
-
         WebElement typeDropdown = driver.findElement(typeSelect);
         Select selectType = new Select(typeDropdown);
         selectType.selectByVisibleText(type);
